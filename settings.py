@@ -50,7 +50,10 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django_utils.middleware.MinifyHTMLMiddleware',
 )
+
+COMPRESS_HTML = True
 
 ROOT_URLCONF = 'urls'
 
