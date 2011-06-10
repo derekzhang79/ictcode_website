@@ -73,15 +73,20 @@ h1, h2, p, li {
     margin: 35px 0px 35px 0px;
 }
 
+#cover-left p a {
+    color: #990000;
+    text-decoration: underline;
+}
+
 /* TODO: Simplify so the image shows up without height/width specified */
-#cover a {
+.button a {
     background-image: url("/static/contact1.png");
     float: left;
     height: 49px;
     width: 147px;
 }
 
-#cover a:hover {
+.button a:hover {
     background-image: url("/static/contact2.png");
 }
 
