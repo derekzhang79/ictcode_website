@@ -1,0 +1,123 @@
+body {
+    margin: auto;
+    width: 960px;
+}
+
+header {
+    border-bottom: 1px solid #E0E0E0;
+    float: left;
+    padding: 30px 0px 20px 0px;
+    position: relative;
+    width: 100%;
+}
+
+header img {
+    float: left;
+    height: 96px;
+}
+
+nav {
+    bottom: 10px;
+    position: absolute;
+    right: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+    margin-left: 20px;
+}
+
+nav li a {
+    color: #585858;
+    font-family: Arvo;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, p, li {
+    color: #585858;
+    font-family: Arial;
+}
+
+#cover {
+    float: left;
+    height: 400px;
+    padding: 30px 0px;
+    position: relative;
+    width: 100%;
+}
+
+#cover h1 {
+    font-family: Arvo;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#cover h2 {
+    font-size: 36px;
+}
+
+#cover-left p {
+    font-size: 13px;
+    line-height: 1.4em;
+    margin: 35px 0px 35px 0px;
+}
+
+#cover a {
+    background-image: url("/static/contact1.png");
+    float: left;
+    height: 49px;
+    width: 147px;
+}
+
+#cover a:hover {
+    background-image: url("/static/contact2.png");
+}
+
+#cover img {
+    float: right;
+}
+
+#cover-left {
+    float: left;
+    width: 380px;
+}
+
+#cover-bottom {
+    border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
+    bottom: 0px;
+    float: left;
+    padding: 15px 0px;
+    position: absolute;
+    width: 100%;
+}
+
+#cover-bottom p {
+    font-size: 12px;
+    float: left;
+    width: 120px;
+}
+
+#cover-bottom ul {
+    float: right;
+    list-style-type: none;
+}
+
+#cover-bottom li {
+    float: left;
+    font-family: Arvo;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    text-transform: uppercase;
+}

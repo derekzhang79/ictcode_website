@@ -3,5 +3,22 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    Home
+    <section id="cover">
+        <div id="cover-left">
+            <h1>Wichita Code</h1>
+            <h2>Software Consulting</h2>
+            <p>We work with small and medium businesses to provide quality software at a reasonable price. If there's any way that we can help you, please contact us.</p>
+            <a href="#"></a>
+        </div>
+        <img src="{{ STATIC_URL }}cover.png" />
+        <div id="cover-bottom">
+            <p>Services offered by our company</p>
+            <ul>
+                <li>Mobile Apps</li>
+                <li>Websites Design</li>
+                <li>Desktop Apps</li>
+                <li>Alot More</li>
+            </ul>
+        </div>
+    </section>
 {% endblock %}

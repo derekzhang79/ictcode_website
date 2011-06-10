@@ -36,6 +36,7 @@ STATICFILES_FINDERS = (
 
 STATICFILES_DIRS = (
     os.path.join(PROJECT_PATH, 'css'),
+    os.path.join(PROJECT_PATH, 'img'),
 )
 
 TEMPLATE_LOADERS = (
