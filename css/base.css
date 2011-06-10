@@ -6,9 +6,14 @@ body {
 header {
     border-bottom: 1px solid #E0E0E0;
     float: left;
-    height: 96px;
-    padding: 30px 0px 20px 0px;
+    height: 128px;
     position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#content {
+    float: left;
     width: 100%;
 }
 
@@ -19,6 +24,7 @@ nav {
 }
 
 nav ul {
+    float: left;
     list-style-type: none;
 }
 
@@ -33,6 +39,10 @@ nav li a {
     font-size: 18px;
 }
 
+nav li a:hover {
+    color: #990000;
+}
+
 a {
     text-decoration: none;
 }
@@ -44,9 +54,6 @@ h1, h2, p, li {
 
 #cover {
     float: left;
-    height: 400px;
-    padding: 30px 0px;
-    position: relative;
     width: 100%;
 }
 
@@ -54,7 +61,6 @@ h1, h2, p, li {
     font-family: Arvo;
     font-size: 48px;
     font-weight: bold;
-    margin-top: 20px;
 }
 
 #cover h2 {
@@ -67,6 +73,7 @@ h1, h2, p, li {
     margin: 35px 0px 35px 0px;
 }
 
+/* TODO: Simplify so the image shows up without height/width specified */
 #cover a {
     background-image: url("/static/contact1.png");
     float: left;
@@ -90,11 +97,10 @@ h1, h2, p, li {
 #cover-bottom {
     border-bottom: 1px solid #E0E0E0;
     border-top: 1px solid #E0E0E0;
-    bottom: 0px;
     float: left;
     padding: 15px 0px;
-    position: absolute;
     width: 100%;
+    margin-top: 50px;
 }
 
 #cover-bottom p {
