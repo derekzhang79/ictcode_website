@@ -3,4 +3,14 @@
 {% block title %}Contact{% endblock %}
 
 {% block content %}
+    <div id="contact_info">
+        <form>
+            <label for="id_name" class="required">Name</label>{{ contact_form.name }}
+            <label for="id_email" class="required">Email</label>{{ contact_form.email }}
+            <label for="id_company">Company</label>{{ contact_form.company }}
+            <label for="id_phone_number">Phone Number</label>{{ contact_form.phone_number }}
+            <label for="id_description" class="required">Description</label>{{ contact_form.description }}
+        </form>
+        <img src="http://maps.google.com/maps/api/staticmap?center=Wichita,KS&zoom=14&size=380x220&sensor=false" />
+    </div>
 {% endblock %}

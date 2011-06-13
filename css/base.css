@@ -47,7 +47,7 @@ a {
     text-decoration: none;
 }
 
-h1, h2, p, li {
+h1, h2, p, li, label {
     color: #585858;
     font-family: Arial;
 }
@@ -127,4 +127,42 @@ h1, h2, p, li {
     letter-spacing: 1px;
     margin-left: 40px;
     text-transform: uppercase;
+}
+
+form {
+    float: left;
+    margin-right: 20px;
+}
+
+input[type="text"], textarea {
+    clear: right;
+    font-family: Arial; /* Needed for textarea */
+    font-size: 16px;
+    float: left;
+    letter-spacing: 1px;
+    margin: 0px 0 20px 0px;
+    padding: 5px;
+    width: 360px;
+}
+
+label {
+    clear: left;
+    display: block;
+    font-family: Arial;
+    font-size: 20px;
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    text-align: right;
+    top: 10px;
+    width: 140px;
+}
+
+label.required {
+    font-weight: bold;
+}
+
+#contact_info img {
+    border: 3px solid #E0E0E0;
+    float: left;
 }

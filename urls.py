@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', direct_to_template, {'template': 'home.html'}, name='home'),
-    url(r'^contact/$', direct_to_template, {'template': 'contact.html'}, name='contact'),
+    url(r'^contact/$', 'views.contact', name='contact'),
     
     url(r'^404/$', direct_to_template, {'template': '404.html'}, name='404'),
     url(r'^500/$', direct_to_template, {'template': '500.html'}, name='500'),
