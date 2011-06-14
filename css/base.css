@@ -12,6 +12,10 @@ header {
     margin-bottom: 50px;
 }
 
+p {
+    line-height: 1.3em;
+}
+
 #content {
     float: left;
     width: 100%;
@@ -145,6 +149,11 @@ input[type="text"], textarea {
     width: 360px;
 }
 
+input[type="text"].error, textarea.error {
+    background-color: #ff6355;
+    color: #fff;
+}
+
 label {
     clear: left;
     display: block;
@@ -163,6 +172,16 @@ label.required {
 }
 
 #contact_info img {
-    border: 3px solid #E0E0E0;
     float: left;
+}
+
+input[type="submit"] {
+    clear: both;
+    float: right;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#contact_info p {
+    margin-bottom: 20px;
 }
