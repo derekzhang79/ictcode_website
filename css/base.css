@@ -6,10 +6,13 @@ body {
 header {
     border-bottom: 1px solid #E0E0E0;
     float: left;
-    height: 128px;
     position: relative;
     width: 100%;
     margin-bottom: 50px;
+}
+
+header img {
+    margin: 10px 0px;
 }
 
 p {
@@ -62,7 +65,7 @@ h1, h2, p, li, label {
 }
 
 h1 {
-    font-family: Arvo;
+    font-family: Ubuntu;
     font-size: 48px;
     font-weight: bold;
 }
