@@ -56,7 +56,7 @@ MIDDLEWARE_CLASSES = (
 
 COMPRESS_HTML = True
 
-ROOT_URLCONF = 'website.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_PATH, 'templates'),
