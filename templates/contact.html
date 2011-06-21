@@ -21,9 +21,9 @@
             <label for="id_company">Company</label>{{ contact_form.company }}
             <label for="id_phone_number">Phone Number</label>{{ contact_form.phone_number }}
             
-            <label for="id_description" class="required">Description</label>
-            <textarea id="id_description" name="description" cols="40" rows="10"
-            {% if contact_form.description.errors %}
+            <label for="id_message" class="required">Message</label>
+            <textarea id="id_message" name="message" cols="40" rows="10"
+            {% if contact_form.message.errors %}
                 class="error"
             {% endif %} 
             >
