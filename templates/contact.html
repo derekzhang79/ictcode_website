@@ -3,7 +3,7 @@
 {% block title %}Contact{% endblock %}
 
 {% block content %}
-    <div id="contact_info">
+    <section id="contact_info">
         <form method="post" action=".">{% csrf_token %}
             <label for="id_name" class="required">Name</label>
             <input id="id_name" type="text" name="name" 
@@ -31,7 +31,8 @@
             
             <input type="submit" value="Request Quote" />
         </form>
-        <p>In order for us to accurately quote your project, we need as much information as possible.</p>
-        <p>Once we receive your information we'll evaluate your project needs and get back to you within 24 hours with the appraisal.</p>
+        <h1>Get In Touch</h1>
+        <p>To get started, send us a message letting us know what type of project you need help with.</p>
+        <p>Please allow 1-2 days for our response -- you might even receive a response the same day.</p>
     </div>
 {% endblock %}

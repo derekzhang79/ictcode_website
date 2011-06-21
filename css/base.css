@@ -44,7 +44,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: #990000;
+    color: #b90000;
 }
 
 a {
@@ -61,10 +61,14 @@ h1, h2, p, li, label {
     width: 100%;
 }
 
-#cover h1 {
+#cover h1, #contact_info h1 {
     font-family: Arvo;
     font-size: 48px;
     font-weight: bold;
+}
+
+#contact_info h1 {
+    float: left;
 }
 
 #cover h2 {
@@ -135,7 +139,7 @@ h1, h2, p, li, label {
 
 form {
     float: left;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 input[type="text"], textarea {
@@ -183,5 +187,7 @@ input[type="submit"] {
 }
 
 #contact_info p {
-    margin-bottom: 20px;
+    margin-top: 20px;
+    float: left;
+    width: 360px;
 }
