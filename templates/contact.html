@@ -9,8 +9,6 @@
             <input id="id_name" type="text" name="name" 
                 {% if contact_form.name.errors %}
                     class="error"
-                {% else %}
-                    placeholder="Joe DiMaggio"
                 {% endif %}
             />
             
@@ -18,8 +16,6 @@
             <input id="id_email" type="text" name="email" 
             {% if contact_form.email.errors %}
                 class="error"
-            {% else %}
-                placeholder="joe@gmail.com"
             {% endif %} />
             
             <label for="id_company">Company</label>{{ contact_form.company }}
