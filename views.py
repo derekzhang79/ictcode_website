@@ -17,9 +17,9 @@ def contact(request):
             message = form.cleaned_data['message']
             
             if name and company:
-                subject = '{0} ({1})'.format(name, company)
+                subject = 'Contact: {0} ({1})'.format(name, company)
             else:
-                subject = name
+                subject = 'Contact: {0}'.format(name)
                 
             message = '{0}\n\n{1}'.format(message, name)
             
