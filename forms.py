@@ -5,4 +5,4 @@ class ContactForm(forms.Form):
     email = forms.EmailField()
     phone_number = forms.CharField(required=False)
     company = forms.CharField(required=False)
-    description = forms.CharField(widget=forms.widgets.Textarea())
+    message = forms.CharField(widget=forms.widgets.Textarea())

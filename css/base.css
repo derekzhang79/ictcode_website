@@ -61,7 +61,7 @@ h1, h2, p, li, label {
     width: 100%;
 }
 
-#cover h1, #contact_info h1 {
+h1 {
     font-family: Arvo;
     font-size: 48px;
     font-weight: bold;
@@ -186,7 +186,7 @@ input[type="submit"] {
     padding: 5px;
 }
 
-#contact_info p {
+#contact_info p, #thanks_info p {
     margin-top: 20px;
     float: left;
     width: 360px;
