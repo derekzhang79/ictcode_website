@@ -4,23 +4,10 @@
 
 {% block content %}
     <section id="cover">
-        <div id="cover-left">
-            <h1>Wichita Code</h1>
-            <h2>Software Consulting</h2>
-            <p>We work with small to large businesses to provide quality software at a reasonable price. If there's any way that we can help you, please <a href="{% url contact %}">contact us</a>.</p>
-            <div class="button">
-                <a href="{% url contact %}"></a>
-            </div>
-        </div>
         <img src="{{ STATIC_URL }}cover.png" />
-        <div id="cover-bottom">
-            <p>Services offered by our company</p>
-            <ul>
-                <li>Mobile Apps</li>
-                <li>Website Design</li>
-                <li>Desktop Apps</li>
-                <li>Alot More</li>
-            </ul>
-        </div>
+        <h1>Wichita Code</h1>
+        <h2>Software Consulting</h2>
+        <p>We work with small to large businesses to provide quality software at a reasonable price. If there's any way that we can help you, please <a href="{% url contact %}">contact us</a>.</p>
+        <a class="button" href="{% url contact %}"></a>
     </section>
 {% endblock %}
