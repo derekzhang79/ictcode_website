@@ -3,6 +3,10 @@ body {
     width: 960px;
 }
 
+#content {
+    margin-bottom: 40px;
+}
+
 header {
     border-bottom: 1px solid #E0E0E0;
     float: left;
