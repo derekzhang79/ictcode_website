@@ -5,6 +5,9 @@ gray (70%):  4d4d4d;
 
 */
 
+html, body {
+    height: 100%;
+}
 
 body {
     margin: auto;
@@ -13,29 +16,36 @@ body {
 
 p {
     line-height: 1.3em;
+    margin-top: 20px;
+    float: left;
+    width: 360px;
 }
 
 a {
     text-decoration: none;
 }
 
-h1, h2, p, li, label {
+h1, h2, p, li, label, textarea {
     color: #4d4d4d;
     font-family: Ubuntu;
 }
 
 h1 {
-    font-family: Ubuntu;
     font-size: 48px;
     font-weight: bold;
 }
 
 h2 {
     font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#container {
+    min-height: 100%;
 }
 
 header {
-    border-bottom: 1px solid;
+    border-bottom: 1px;
     position: relative;
 }
 
@@ -45,7 +55,8 @@ header img {
 
 #content {
     float: left;
-    width: 100%;
+	padding-bottom: 50px;
+	margin-top: 50px;
 }
 
 nav {
@@ -65,22 +76,28 @@ nav li {
 
 nav li a {
     color: #585858;
-    font-family: Arvo;
     font-size: 18px;
+    font-weight: bold;
 }
 
 nav li a:hover {
     color: #b90000;
 }
 
-/* For highlighting purposes */
-#cover, #cover h1, #cover h2, #cover p {
+#cover {
+    float: left;
+}
+
+#cover h1 {
+    float: left;
+}
+
+#cover h2 {
     float: left;
 }
 
 #cover p {
-    margin: 50px 0px;
-    width: 380px;
+    float: left;
 }
 
 #cover img {
@@ -98,6 +115,7 @@ nav li a:hover {
     float: left;
     height: 49px;
     width: 147px;
+    margin-top: 50px;
 }
 
 .button:hover {
@@ -114,9 +132,6 @@ form {
 }
 
 input[type="text"], textarea {
-    clear: right;
-    font-family: Arial; /* Needed for textarea */
-    font-size: 16px;
     float: left;
     letter-spacing: 1px;
     margin: 0px 0 20px 0px;
@@ -125,14 +140,12 @@ input[type="text"], textarea {
 }
 
 input[type="text"].error, textarea.error {
-    background-color: #ff6355;
+    background-color: #b90000;
     color: #fff;
 }
 
 label {
     clear: left;
-    display: block;
-    font-family: Arial;
     font-size: 20px;
     float: left;
     margin-right: 30px;
@@ -146,98 +159,42 @@ label.required {
     font-weight: bold;
 }
 
-#contact_info img {
-    float: left;
-}
-
 input[type="submit"] {
     clear: both;
     float: right;
-    font-size: 16px;
     padding: 5px;
 }
 
-#contact_info p, #thanks_info p {
-    margin-top: 20px;
-    float: left;
-    width: 360px;
-}
-
-
-
-
-
-
-footer {
-}
-
-footer p {
-    font-size: 12px;
-    float: left;
-    width: 120px;
-}
-
-footer ul {
-    float: right;
-    list-style-type: none;
-}
-
-footer p, footer ul {
-    margin-top: 10px;
-}
-
-footer li {
-    float: left;
-    font-family: Arvo;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-left: 40px;
-    text-transform: uppercase;
-}
-
-
-
-
-
-
-html, body {
-    height: 100%;
-}
-
-#container {
-    min-height: 100%;
-}
-
-#content {
-    overflow:auto;
-	padding-bottom: 50px;
-	margin-top: 50px;
+input[type="submit"], input[type="text"], textarea {
+    font-size: 16px;
 }
 
 footer {
-    border-top: 1px solid;
-    position: relative;
+    border-top: 1px;
 	margin-top: -101px;
 	height: 100px;
 	clear: both;
 } 
 
-body:before {
-	content:"";
-	height:100%;
-	float:left;
-	width:0;
-	margin-top:-32767px;
+footer p {
+    font-size: 12px;
+    width: 120px;
+    margin-top: 10px;
 }
 
+footer ul {
+    float: right;
+    margin-top: 14px;
+}
 
-
-
-
-
+footer li {
+    float: left;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 40px;
+}
 
 header, footer {
+    border-style: solid;
     border-color: #ececec;
 }
-
