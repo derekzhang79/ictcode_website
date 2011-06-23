@@ -21,6 +21,11 @@ p {
     width: 360px;
 }
 
+p a {
+    color: #ff5b5b;
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
 }
@@ -102,11 +107,6 @@ nav li a:hover {
 
 #cover img {
     float: right;
-}
-
-#cover p a {
-    color: #ff5b5b;
-    text-decoration: underline;
 }
 
 /* TODO: Simplify so the image shows up without height/width specified */
