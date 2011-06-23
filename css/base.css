@@ -81,7 +81,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: #b90000;
+    color: #ff5b5b;
 }
 
 #cover {
@@ -105,7 +105,7 @@ nav li a:hover {
 }
 
 #cover p a {
-    color: #990000;
+    color: #ff5b5b;
     text-decoration: underline;
 }
 
@@ -140,7 +140,7 @@ input[type="text"], textarea {
 }
 
 input[type="text"].error, textarea.error {
-    background-color: #b90000;
+    background-color: #ff5b5b;
     color: #fff;
 }
 
@@ -167,6 +167,16 @@ input[type="submit"] {
 
 input[type="submit"], input[type="text"], textarea {
     font-size: 16px;
+}
+
+ul.errorlist li {
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 170px;
+    font-weight: bold;
+    border-bottom: 4px solid #ff5b5b;
+    float: left;
 }
 
 footer {
