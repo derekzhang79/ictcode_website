@@ -8,14 +8,14 @@
             {{ contact_form.non_field_errors }}
             
             <label for="id_name" class="required">Name</label>
-            <input id="id_name" type="text" name="name" value="{{ contact_form.name.value }}"
+            <input id="id_name" type="text" name="name" value="{% if contact_form.name.value %}{{ contact_form.name.value }}{% endif %}"
                 {% if contact_form.name.errors %}
                     class="error"
                 {% endif %}
             />
             
             <label for="id_email" class="required">Email</label>
-            <input id="id_email" type="text" name="email" value="{{ contact_form.email.value }}"
+            <input id="id_email" type="text" name="email" value="{% if contact_form.email.value %}{{ contact_form.email.value }}{% endif %}"
             {% if contact_form.email.errors %}
                 class="error"
             {% endif %} />
@@ -29,7 +29,7 @@
                 class="error"
             {% endif %} 
             >
-                {{ contact_form.message.value }}
+                {% if contact_form.message.value %}{{ contact_form.message.value }}{% endif %}
             </textarea>
             
             <input type="submit" value="Send Message" />
