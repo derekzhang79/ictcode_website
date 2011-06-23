@@ -107,10 +107,7 @@ nav li a:hover {
 
 footer {
     border-top: 1px solid;
-    float: left;
-    padding: 15px 0px;
-    width: 100%;
-    margin: 150px 0px 20px 0px;    
+    padding: 15px 0px 40px 0px;  
 }
 
 footer p {
@@ -196,3 +193,50 @@ input[type="submit"] {
 header, footer {
     border-color: #ececec;
 }
+
+
+
+
+
+
+/*
+html, body {
+    height: 100%;
+}
+
+#container {
+    min-height: 100%;
+}
+
+#content {
+    overflow:auto;
+	padding-bottom: 50px;
+}
+
+footer {position: relative;
+	margin-top: -50px;
+	height: 50px;
+	clear:both;
+} 
+
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;
+}
+*/
+
+html, body, #container { height: 100%; }
+body > #container { height: auto; min-height: 100%; }
+
+footer {
+ clear: both;
+ position: relative;
+ z-index: 10;
+ height: 50px;
+ margin-top: -50px;
+}
+
+#content { padding-bottom: 50px; }
