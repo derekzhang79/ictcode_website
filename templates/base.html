@@ -28,22 +28,25 @@
             <nav>
                 <ul>
                     <li><a href="{% url home %}">Home</a></li>
+                    <li><a href="{% url mobile %}">Mobile</a></li>
+                    <li><a href="{% url web %}">Web</a></li>
+                    <li><a href="{% url desktop %}">Desktop</a></li>
                     <li><a href="{% url contact %}">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        
+
         <div id="content">
             {% block content %}{% endblock %}
         </div>
     </div>
-    
+
     <footer>
         <p>Services offered by our company</p>
         <ul>
-            <li>Mobile Apps</li>
-            <li>Website Design</li>
-            <li>Desktop Apps</li>
+            <li><a href="{% url mobile %}">Mobile Apps</a></li>
+            <li><a href="{% url web %}">Website Design</a></li>
+            <li><a href="{% url desktop %}">Desktop Apps</a></li>
             <li>Alot More</li>
         </ul>
     </footer>

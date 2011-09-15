@@ -4,7 +4,7 @@ from django.template import RequestContext
 from forms import ContactForm
 
 
-def contact(request):
+def contact(request, quote_id=None):
     if request.method == 'POST':
         form = ContactForm(request.POST)
 
@@ -13,7 +13,7 @@ def contact(request):
 
             return redirect('thanks')
     else:
-        form = ContactForm()
+        form = ContactForm(initial={'quote_number': quote_id})
 
     response_data = {
         'contact_form': form,

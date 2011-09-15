@@ -1,4 +1,4 @@
-/* 
+/*
 
 gray (7.5%): ececec;
 gray (70%):  4d4d4d;
@@ -26,11 +26,16 @@ p a {
     text-decoration: underline;
 }
 
+p span {
+    background-color: #fffc4f;
+    padding: 1px 2px;
+}
+
 a {
     text-decoration: none;
 }
 
-h1, h2, p, li, label, textarea {
+h1, h2, h3, p, li, label, textarea {
     color: #4d4d4d;
     font-family: Ubuntu;
 }
@@ -43,6 +48,15 @@ h1 {
 h2 {
     font-size: 36px;
     margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    float: left;
+    clear: both;
 }
 
 #container {
@@ -126,6 +140,47 @@ nav li a:hover {
     float: left;
 }
 
+#quote_options {
+    float: left;
+    margin-right: 150px;
+}
+
+#quote_options label {
+    width: auto;
+    position: static;
+    margin: 0px 0px 10px 0px;
+}
+
+#quote_options li {
+    clear: left;
+    font-size: 20px;
+    float: left;
+    margin: 0px 0px 10px 0px;
+}
+
+#quote_options ul.errorlist li {
+    left: 0px;
+}
+
+#quote_options form {
+    width: 360px;
+}
+
+#quote_options input[type="submit"] {
+    margin-top: 10px;
+}
+
+.info_box {  /* TODO: Alot of these are hacks ack */
+    float: right;
+    width: 350px;
+    padding: 10px;
+    background-color: #ececec;
+}
+
+.info_box p {
+    margin: 10px 0px; /* TODO: Hack */
+}
+
 form {
     float: left;
     margin-right: 40px;
@@ -184,7 +239,7 @@ footer {
 	margin-top: -101px;
 	height: 100px;
 	clear: both;
-} 
+}
 
 footer p {
     font-size: 12px;
@@ -202,6 +257,15 @@ footer li {
     font-size: 18px;
     letter-spacing: 1px;
     margin-left: 40px;
+}
+
+footer li a {
+    text-decoration: underline;
+    color: #4d4d4d;
+}
+
+footer li a:hover {
+    color: #ff5b5b;
 }
 
 header, footer {

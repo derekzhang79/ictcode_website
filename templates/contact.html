@@ -6,36 +6,47 @@
     <section id="contact_info">
         <form method="post" action=".">{% csrf_token %}
             {{ contact_form.non_field_errors }}
-            
+
             <label for="id_name" class="required">Name</label>
             <input id="id_name" type="text" name="name" value="{% if contact_form.name.value %}{{ contact_form.name.value }}{% endif %}"
                 {% if contact_form.name.errors %}
                     class="error"
                 {% endif %}
             />
-            
+
             <label for="id_email" class="required">Email</label>
             <input id="id_email" type="text" name="email" value="{% if contact_form.email.value %}{{ contact_form.email.value }}{% endif %}"
             {% if contact_form.email.errors %}
                 class="error"
             {% endif %} />
-            
+
             <label for="id_company">Company</label>{{ contact_form.company }}
             <label for="id_phone_number">Phone Number</label>{{ contact_form.phone_number }}
-            
+
+            <label for="id_quote_number">Quote #</label>
+            <input id="id_quote_number" type="text" name="quote_number" value="{% if contact_form.quote_number.value %}{{ contact_form.quote_number.value }}{% endif %}"
+                {% if contact_form.quote_number.errors %}
+                    class="error"
+                {% endif %}
+            />
+
             <label for="id_message" class="required">Message</label>
             <textarea id="id_message" name="message" cols="40" rows="10"
             {% if contact_form.message.errors %}
                 class="error"
-            {% endif %} 
+            {% endif %}
             >
                 {% if contact_form.message.value %}{{ contact_form.message.value }}{% endif %}
             </textarea>
-            
+
             <input type="submit" value="Send Message" />
         </form>
         <h1>Get In Touch</h1>
-        <p>To get started, send us a message letting us know what type of project you need help with.</p>
-        <p>Please allow 1-2 days for our response -- you might even receive a response the same day.</p>
-    </div>
+        <p>To get started, use one of our instant quote pages
+           (<a href="{% url mobile %}">mobile</a>,
+           <a href="{% url web %}">web</a> or
+           <a href="{% url desktop %}">desktop</a>)
+           or send us a message letting us know what type of project you need help with.</p>
+        <p>Please allow 1-2 days for our response -- you will probably receive a response within a few hours.</p>
+    </section>
 {% endblock %}
