@@ -24,7 +24,7 @@
                     {% endifchanged %}
                     <label for="id_tasks_{{ task.id }}">
                         <input id="id_tasks_{{ task.id }}" type="checkbox" value="{{ task.id }}" name="tasks">
-                        {{ task }}
+                        {{ task.name }} <span>({{ task.hours }} hours)</span>
                     </label>
                 {% endfor %}
 

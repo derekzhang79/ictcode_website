@@ -158,6 +158,10 @@ nav li a:hover {
     margin: 0px 0px 10px 0px;
 }
 
+#quote_options li span, #quote_options label span {
+    color: gray;
+}
+
 #quote_options ul.errorlist li {
     left: 0px;
 }

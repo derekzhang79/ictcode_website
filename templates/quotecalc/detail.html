@@ -18,7 +18,7 @@
                 {% endif %}
                 </h3>
             {% endifchanged %}
-            <li>{{ task }}</li>
+            <li>{{ task.name }} <span>({{ task.hours }} hours)</span></li>
         {% endfor %}
         </ul>
 
