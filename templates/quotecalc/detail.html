@@ -9,16 +9,21 @@
     <section id="quote_options">
         <ul>
         {% for task in quote.tasks.all %}
-            {% ifchanged task.sub_category %}
-                <h3>
-                {% if not task.sub_category %}
-                    General
-                {% else %}
-                    {{ task.sub_category }}
-                {% endif %}
-                </h3>
-            {% endifchanged %}
-            <li>{{ task.name }} <span>({{ task.hours }} hours)</span></li>
+            {% if not task.sub_category %}
+                {% ifchanged task.sub_category %}
+                    <h3>General</h3>
+                {% endifchanged %}
+                <li>{{ task.name }} <span>({{ task.hours }} hours)</span></li>
+            {% endif %}
+        {% endfor %}
+
+        {% for task in quote.tasks.all %}
+            {% if task.sub_category %}
+                {% ifchanged task.sub_category %}
+                    <h3>{{ task.sub_category }}</h3>
+                {% endifchanged %}
+                <li>{{ task.name }} <span>({{ task.hours }} hours)</span></li>
+            {% endif %}
         {% endfor %}
         </ul>
 
