@@ -13,19 +13,27 @@
                 {{ quote_form.non_field_errors }}
 
                 {% for task in tasks %}
-                    {% ifchanged task.sub_category %}
-                        <h3>
-                        {% if not task.sub_category %}
-                            General
-                        {% else %}
-                            {{ task.sub_category }}
-                        {% endif %}
-                        </h3>
-                    {% endifchanged %}
-                    <label for="id_tasks_{{ task.id }}">
-                        <input id="id_tasks_{{ task.id }}" type="checkbox" value="{{ task.id }}" name="tasks">
-                        {{ task.name }} <span>({{ task.hours }} hours)</span>
-                    </label>
+                    {% if not task.sub_category %}
+                        {% ifchanged task.sub_category %}
+                            <h3>General</h3>
+                        {% endifchanged %}
+                        <label for="id_tasks_{{ task.id }}">
+                            <input id="id_tasks_{{ task.id }}" type="checkbox" value="{{ task.id }}" name="tasks">
+                            {{ task.name }} <span>({{ task.hours }} hours)</span>
+                        </label>
+                    {% endif %}
+                {% endfor %}
+
+                {% for task in tasks %}
+                    {% if task.sub_category %}
+                        {% ifchanged task.sub_category %}
+                            <h3>{{ task.sub_category }}</h3>
+                        {% endifchanged %}
+                        <label for="id_tasks_{{ task.id }}">
+                            <input id="id_tasks_{{ task.id }}" type="checkbox" value="{{ task.id }}" name="tasks">
+                            {{ task.name }} <span>({{ task.hours }} hours)</span>
+                        </label>
+                    {% endif %}
                 {% endfor %}
 
                 <input type="submit" value="Get Quote" />
