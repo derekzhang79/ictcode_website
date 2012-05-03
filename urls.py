@@ -6,11 +6,17 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', direct_to_template, {'template': 'home.html'}, name='home'),
+    
+    url(r'^mobile/$', direct_to_template, {'template': 'mobile.html'}, 
+        name='mobile'),
+    
+    url(r'^web/$', direct_to_template, {'template': 'web.html'}, 
+        name='web'),
+    
+    url(r'^desktop/$', direct_to_template, {'template': 'desktop.html'}, 
+        name='desktop'),
 
     url(r'^contact/$', 'views.contact', name='contact'),
-    url(r'^contact/(?P<quote_id>\d+)/$', 'views.contact', name='contact'),
-
-    url(r'^quote/', include('quotecalc.urls')),
 
     url(r'^thanks/$', direct_to_template, {'template': 'thanks.html'},
      name='thanks'),

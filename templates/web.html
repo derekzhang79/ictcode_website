@@ -1,3 +1,8 @@
-{% extends "quotecalc/create.html" %}
+{% extends "base.html" %}
 
-{% block calc_title %}Website Design{% endblock %}
+{% block title %}Website Design{% endblock %}
+
+{% block content %}
+	<h1>Website Design</h1>
+	<p>There isn't an instant quote for this type of project yet. You will have to manually <a href="{% url contact %}">contact</a> us to get a price.</p>
+{% endblock content %}
