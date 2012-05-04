@@ -15,6 +15,7 @@ MANAGERS = ADMINS
 
 TIME_ZONE = 'America/Chicago'
 LANGUAGE_CODE = 'en-us'
+WSGI_APPLICATION = 'wsgi.application'
 
 SITE_ID = 1
 
