@@ -23,13 +23,6 @@
             <label for="id_company">Company</label>{{ contact_form.company }}
             <label for="id_phone_number">Phone Number</label>{{ contact_form.phone_number }}
 
-            <label for="id_quote_number">Quote #</label>
-            <input id="id_quote_number" type="text" name="quote_number" value="{% if contact_form.quote_number.value %}{{ contact_form.quote_number.value }}{% endif %}"
-                {% if contact_form.quote_number.errors %}
-                    class="error"
-                {% endif %}
-            />
-
             <label for="id_message" class="required">Message</label>
             <textarea id="id_message" name="message" cols="40" rows="10"
             {% if contact_form.message.errors %}
@@ -42,7 +35,7 @@
             <input type="submit" value="Send Message" />
         </form>
         <h1>Get In Touch</h1>
-        <p>To get started, use one of our instant quote pages
+        <p>To get started, browse our website to get a feel for us
            (<a href="{% url mobile %}">mobile</a>,
            <a href="{% url web %}">web</a> or
            <a href="{% url desktop %}">desktop</a>)

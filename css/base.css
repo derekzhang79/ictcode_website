@@ -140,40 +140,6 @@ nav li a:hover {
     float: left;
 }
 
-#quote_options {
-    float: left;
-    margin-right: 100px;
-}
-
-#quote_options label {
-    width: auto;
-    position: static;
-    margin: 0px 0px 10px 0px;
-}
-
-#quote_options li {
-    clear: left;
-    font-size: 20px;
-    float: left;
-    margin: 0px 0px 10px 0px;
-}
-
-#quote_options li span, #quote_options label span {
-    color: gray;
-}
-
-#quote_options ul.errorlist li {
-    left: 0px;
-}
-
-#quote_options form {
-    width: 480px;
-}
-
-#quote_options input[type="submit"] {
-    margin-top: 10px;
-}
-
 .info_box {  /* TODO: Alot of these are hacks ack */
     float: right;
     width: 350px;
