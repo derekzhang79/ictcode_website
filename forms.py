@@ -34,12 +34,19 @@ class ContactForm(forms.Form):
 
         body = '{0}\n\n'.format(message)
 
-        body = '{0}{1}\n'.format(body, name)
+        body = '{0}{1}\n{2}\n'.format(body, name, email)
 
         if phone_number:
             body = '{0}\n{1}'.format(body, phone_number)
 
         connection = connection or get_connection()
 
-        EmailMessage(subject, body, email, zip(*settings.MANAGERS)[1],
-                     connection=connection).send()
+        # headers needs to be specified in the constructor for it to work
+        e = EmailMessage(headers={'Reply-To': email})
+        
+        e.subject = subject
+        e.body = body 
+        e.to = [settings.CONTACT_EMAIL,]
+        e.connection = connection
+        
+        e.send()

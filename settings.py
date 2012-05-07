@@ -16,6 +16,8 @@ MANAGERS = ADMINS
 TIME_ZONE = 'America/Chicago'
 LANGUAGE_CODE = 'en-us'
 WSGI_APPLICATION = 'wsgi.application'
+DEFAULT_FROM_EMAIL = 'admin@wichitacode.com'
+CONTACT_EMAIL = 'will@wichitacode.com'
 
 SITE_ID = 1
 
